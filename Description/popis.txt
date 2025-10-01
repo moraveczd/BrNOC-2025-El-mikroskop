@@ -1,5 +1,8 @@
-* Krátkı popis
-Brno je svìtovım centrem vıvoje a vıroby elektronovıch mikroskopù. Pojïme se podívat, jak tyto mikroskopy fungují a k èemu jsou dobré.
+* NÃ¡zev
+ElektronovÃ¡ mikroskopie a Brno
 
-* Dlouhı popis
-V pøednášce se podíváme na to, jak vlastnì funguje svìtelnı mikroskop a proè potøebujeme elektronové mikroskopy. Ukáeme si principy funkce jednotlivıch typù mikroskopù a dozvíme se, jaké informace o pozorovaném vzorku mùeme z mikroskopù získat. A samozøejmì se podíváme i na vztah Brna a elektronové mikroskopie.
+* KrÃ¡tkÃ½ popis
+Brno je svÄ›tovÃ½m centrem vÃ½voje a vÃ½roby elektronovÃ½ch mikroskopÅ¯. PojÄme se podÃ­vat, jak tyto mikroskopy fungujÃ­ a k Äemu jsou dobrÃ©.
+
+* DlouhÃ½ popis
+V pÅ™ednÃ¡Å¡ce se podÃ­vÃ¡me na to, jak vlastnÄ› funguje svÄ›telnÃ½ mikroskop a proÄ potÅ™ebujeme elektronovÃ© mikroskopy. UkÃ¡Å¾eme si principy funkce jednotlivÃ½ch typÅ¯ mikroskopÅ¯ a dozvÃ­me se, jakÃ© informace o pozorovanÃ©m vzorku mÅ¯Å¾eme z mikroskopÅ¯ zÃ­skat. A samozÅ™ejmÄ› se podÃ­vÃ¡me i na vztah elektronovÃ© mikroskopie k Brnu.
