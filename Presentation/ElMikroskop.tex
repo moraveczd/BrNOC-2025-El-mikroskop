@@ -1,0 +1,184 @@
+\documentclass[hyperref=unicode, presentation,10pt]{beamer}
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{mhchem}
+\usepackage{chemfig}
+\usepackage{caption}
+
+%dělení slov
+\usepackage{ragged2e}
+\let\raggedright=\RaggedRight
+%konec dělení slov
+
+\addtobeamertemplate{frametitle}{
+	\let\insertframetitle\insertsectionhead}{}
+\addtobeamertemplate{frametitle}{
+	\let\insertframesubtitle\insertsubsectionhead}{}
+
+\makeatletter
+\CheckCommand*\beamer@checkframetitle{\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+\renewcommand*\beamer@checkframetitle{\global\let\beamer@frametitle\relax\@ifnextchar\bgroup\beamer@inlineframetitle{}}
+\makeatother
+\setbeamercolor{section in toc}{fg=red}
+\setbeamertemplate{section in toc shaded}[default][100]
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{czech}
+
+\def\uv#1{„#1“}
+
+\mode<presentation>{\usetheme{default}}
+\usecolortheme{crane}
+
+\setbeamertemplate{footline}[frame number]
+
+\title[Crisis]
+{Elektronová mikroskopie a Brno}
+
+\subtitle{BrNOC 5. 12. 2025}
+\author{Zdeněk Moravec, hugo@chemi.muni.cz \\ \adjincludegraphics[height=45mm]{img/Aspergillus_niger_SEM.jpg}}
+\date{}
+
+\begin{document}
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\section{Úvod}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{itemize}
+		\item Pro analýzu prášků a povrchových vrstev se využívá \textit{elektronová mikroskopie}.
+		\item Místo světla využívá proud urychlených elektronů, což umožňuje zlepšit rozlišení fotografie.
+		\item Získané obrázky jsou černobílé, ale je možné je kolorovat na základě dalších dat, např. prvkového složení.
+		\item Druhy elektronové mikroskopie:
+		\begin{itemize}
+			\item SEM -- skenovací elektronová mikroskopie
+			\item TEM -- transmisní elektronová mikroskopie
+			\item AFM -- mikroskopie atomárních sil
+		\end{itemize}
+		\item EDX -- energiově dispezní RTG spektroskopie (Energy-dispersive \mbox{X-ray} spectroscopy). Analytická technika poskytující prvkové složení vzorku.
+		\item Snímání objektu probíhá zpravidla ve vakuu a vzorky by měly být vodivé.
+	\end{itemize}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{columns}
+		\begin{column}{.7\textwidth}
+			\begin{figure}
+				\adjincludegraphics[width=\textwidth]{img/Schema_MEB.png}
+				\caption*{Schéma SEM.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Schema_MEB_(en).svg}{Steff/Commons}}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.3\textwidth}
+			\begin{figure}
+				\adjincludegraphics[width=1.3\textwidth]{img/Electron_emission.png}
+				\caption*{Emise elektronů.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Electron_emission_mechanisms.svg}{Rob Hurt/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.67\textheight]{img/Germanium_Telluride_nanowires.jpg}
+		\caption*{Nanovlákna GeTe.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Germanium_Telluride_nanowires.jpg}{Fionán/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.67\textheight]{img/Quasimodopsis_riedeli_SEM.jpg}
+		\caption*{SEM snímek \textit{Quasimodopsis riedeli}.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Quasimodopsis_riedeli_SEM.jpg}{Michael S. Caterino/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.67\textheight]{img/EDS_-_Rimicaris_exoculata.png}
+		\caption*{Ukázka EDX spektra.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:EDS_-_Rimicaris_exoculata.png}{Hat'nCoat/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{columns}
+		\begin{column}{.7\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=.63\textheight]{img/TEM_philips_EM_430.jpg}
+				\caption*{TEM mikroskop.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:TEM_philips_EM_430.jpg}{KristianMolhave/Commons}}}
+			\end{figure}
+		\end{column}
+		\begin{column}{.3\textwidth}
+			\begin{figure}
+				\adjincludegraphics[height=.63\textheight]{img/Electron_microscope.png}
+				\caption*{Schéma TEM mikroskopu.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Electron_microscope.svg}{Superborsuk/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.65\textheight]{img/TEM_images_of_silica.jpg}
+		\caption*{TEM snímek hybridní siliky.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:TEM_images_of_silica-organic_matrix-based_suspension.jpg}{Florentyna/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.67\textheight]{img/AFMsetup.jpg}
+		\caption*{Schéma AFM.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:AFMsetup.jpg}{KristianMolhave/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.67\textheight]{img/AFM_-_detail.jpg}
+		\caption*{AFM mikroskop.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:AFM_-_detail.jpg}{Laundry/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.67\textheight]{img/AFM_3D_Topography.jpg}
+		\caption*{AFM snímek nanočástic palladia.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:AFM_3D_Topography_Image_of_Palladium_Nanoparticles_on_Chitosan_Film.tif}{Mehrabanian/Commons}}}
+	\end{figure}
+	\vfill
+}
+
+\end{document}
