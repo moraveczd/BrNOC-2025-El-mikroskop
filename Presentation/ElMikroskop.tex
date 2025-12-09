@@ -147,6 +147,7 @@
 	\vfill
 	\begin{itemize}
 		\item Místo světla využívá proud urychlených elektronů, což umožňuje zlepšit rozlišení fotografie.
+		\item Umožňují zvětšení obrazu až 2 000 000$\times$, to umožňuje rozlišení až na atomární úrovni (50~pm = 5.10$^{-11}$ m).
 		\item Získané obrázky jsou černobílé, ale je možné je kolorovat na základě dalších dat, např. prvkového složení.
 		\item Druhy elektronové mikroskopie:
 		\begin{itemize}
@@ -158,6 +159,16 @@
 		\item EDX -- energiově dispezní RTG spektroskopie (Energy-dispersive \mbox{X-ray} spectroscopy). Analytická technika poskytující prvkové složení vzorku.
 		\item Snímání objektu probíhá zpravidla ve vakuu a vzorky by měly být vodivé.
 	\end{itemize}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.75\textheight]{img/MicroscopesOverview.png}
+		\caption*{Typy mikroskopů.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:MicroscopesOverview.svg}{FDominec/Commons}}}
+	\end{figure}
 	\vfill
 }
 
@@ -230,7 +241,57 @@
 	\vfill
 }
 
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{columns}
+		\begin{column}{.65\textwidth}
+			\begin{itemize}
+				\item V elektronových mikroskopech se využívá krystal wolframu s velmi tenkým hrotem, který je vystaven velmi silnému elektrickému poli.
+				\item Uvolněné elektrony jsou soustavou nabitých destiček urychleny až na cca 70 \% rychlosti světla.
+				\item Vše probíhá ve velmi vysokém vakuu.
+			\end{itemize}
+		\end{column}
+		\begin{column}{.4\textwidth}
+			\begin{figure}
+				\adjincludegraphics[width=\textwidth]{img/Wolfram.jpg}
+				\caption*{Wolfram.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Wolfram_evaporated_crystals_and_1cm3_cube.jpg}{Alchemist-hp/Commons}}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+	\vfill
+}
+
 \subsection{Skenovací elektronová mikroskopie}
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{itemize}
+		\item \textbf{Skenovací elektronová mikroskopie} (SEM) je založena na skenování povrchu vzorku elektronovým svazkem a detekuje signály vznikající při interakci elektronů s materiálem.
+		\item Vysokoenergetické elektrony (obvykle 1–30 keV) jsou fokusovány do úzkého svazku pomocí elektromagnetických čoček.
+		\item Svazek postupně „projíždí“ po povrchu vzorku v rastru.
+		\item Vzorek musí být vodivý. Nevodivé vzorky je nutné pokovit nebo pokrýt velmi tenkou vrstvou grafitu, jinak dochází k jejich nabíjení.
+		\item Elektrony pronikají do povrchové vrstvy vzorku a vyvolávají různé signály:
+		\begin{itemize}
+			\item Sekundární elektrony -- poskytují detailní topografii povrchu.
+			\item Odražené (zpětně rozptýlené) elektrony -- informace o složení a kontrastu.
+			\item Rentgenové záření -- chemická analýza (EDS -- Energiově Disperzní Spektroskopie).
+		\end{itemize}
+		\item Detektory zachytí tyto signály a počítač je převede na obraz s vysokým rozlišením (typicky nanometry).
+	\end{itemize}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{figure}
+		\adjincludegraphics[height=.7\textheight]{img/Gold_Spider_SEM_sample.jpg}
+		\caption*{Pozlacený pavouk, pro pozorování pomocí SEM.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Gold_Spider_SEM_sample.jpg}{Toby Hudson/Commons}}}
+	\end{figure}
+	\vfill
+}
+
 \frame{
 	\frametitle{}
 	\vfill
@@ -255,9 +316,43 @@
 	\frametitle{}
 	\vfill
 	\begin{figure}
-		\adjincludegraphics[height=.7\textheight]{img/Gold_Spider_SEM_sample.jpg}
-		\caption*{Pozlacený pavouk, pro pozorování pomocí SEM.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:Gold_Spider_SEM_sample.jpg}{Toby Hudson/Commons}}}
+		\adjincludegraphics[height=.67\textheight]{img/EDS_-_Rimicaris_exoculata.png}
+		\caption*{Ukázka EDX spektra.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:EDS_-_Rimicaris_exoculata.png}{Hat'nCoat/Commons}}}
 	\end{figure}
+	\vfill
+}
+
+\frame{
+	\frametitle{}
+	\vfill
+	\textbf{Využití SEM}
+	\begin{itemize}
+		\item Materiálové vědy
+		\begin{itemize}
+			\item Studium mikrostruktury kovů, keramiky, kompozitů.
+			\item Analýza poréznosti, trhlin, povrchových úprav.
+		\end{itemize}
+		\item Biologie a medicína
+		\begin{itemize}
+			\item Zobrazení povrchu buněk, tkání, mikroorganismů.
+			\item Studium morfologie biomateriálů (implantáty, kostní náhrady).
+		\end{itemize}
+		\item Průmysl
+		\begin{itemize}
+			\item Kontrola povrchových vad (praskliny, nečistoty).
+			\item Inspekce mikrostruktur polovodičů, čipů.Analýza opotřebení a korozních procesů.
+		\end{itemize}
+		\item Elektronika
+		\begin{itemize}
+			\item Inspekce mikrostruktur polovodičů, čipů.
+			\item Analýza poruch v integrovaných obvodech.
+		\end{itemize}
+		\item Forenzní vědy
+		\begin{itemize}
+			\item Vyšetřování stop (vlákna, zbytky střelného prachu).
+			\item Analýza povrchů při kriminalistických expertízách.
+		\end{itemize}
+	\end{itemize}
 	\vfill
 }
 
@@ -281,17 +376,22 @@
 	\vfill
 }
 
+\subsection{Transmisní elektronová mikroskopie}
 \frame{
 	\frametitle{}
 	\vfill
-	\begin{figure}
-		\adjincludegraphics[height=.67\textheight]{img/EDS_-_Rimicaris_exoculata.png}
-		\caption*{Ukázka EDX spektra.\footnote[frame]{Zdroj: \href{https://commons.wikimedia.org/wiki/File:EDS_-_Rimicaris_exoculata.png}{Hat'nCoat/Commons}}}
-	\end{figure}
+	\begin{itemize}
+		\item \textbf{Transmisní elektronová mikroskopie} (TEM) je založena na průchodu elektronového svazku celým vzorkem.
+		\item Vysokoenergetické elektrony (60-–300 keV) jsou fokusovány do úzkého svazku pomocí elektromagnetických čoček.
+		\item Vzorek musí být velmi tenký (desítky až stovky nanometrů), aby elektrony mohly projít. Při průchodu dochází k rozptylu elektronů podle struktury a hustoty materiálu.
+		\item Elektrony, které prošly vzorkem, jsou zachyceny na fluorescenčním stínítku nebo detektoru. Rozdíly v intenzitě (způsobené rozptylem) vytvářejí obraz s vysokým rozlišením.
+		\item TEM dosahuje rozlišení až na úroveň atomů (řádově 0,1 nm), což je mnohem vyšší než u SEM.
+		\item Umožňuje studovat vnitřní strukturu vzorku (ne jen povrch).
+		\item Vhodné pro krystalografii, nanostruktury, biologické vzorky (po speciální přípravě).
+	\end{itemize}
 	\vfill
 }
 
-\subsection{Transmisní elektronová mikroskopie}
 \frame{
 	\frametitle{}
 	\vfill
@@ -323,6 +423,18 @@
 }
 
 \subsection{Kryoelektronová mikroskopie}
+\frame{
+	\frametitle{}
+	\vfill
+	\begin{itemize}
+		\item \textbf{Kryoelektronová mikroskopie} (cryo-EM) je metoda zobrazování biologických vzorků při velmi nízkých teplotách, která umožňuje studovat struktury biomolekul v jejich přirozeném stavu bez nutnosti krystalizace.
+		\item Vzorek (např. protein, virus) se nanese na mřížku a okamžitě se zmrazí v kapalném ethanu při teplotě blízké -196 °C. Tím se vytvoří amorfní led, který zabraňuje tvorbě krystalů vody a uchovává molekuly v nativní konformaci.
+		\item Vzorek se vloží do elektronového mikroskopu vybaveného kryogenním systémem. Elektronový svazek prochází vzorkem a vytváří snímky s vysokým rozlišením.
+		\item Získají se tisíce dvourozměrných projekcí jednotlivých částic v různých orientacích.
+		\item Pomocí algoritmů se tyto snímky zarovnají a složí do trojrozměrného modelu s rozlišením až na úroveň atomů.
+	\end{itemize}
+	\vfill
+}
 
 \subsection{Mikroskopie atomárních sil}
 \frame{
